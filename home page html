@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to create a website using HTML and CSS</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#intro">Home</a></li>
+<li><a href="#reg">Registration</a></li>
+<li><a href="#login">LOGIN</a></li>
+<li>><a href="#contact">Contacts</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="intro">
+<div class="Container">
+<img src="C:\Users\mosri\OneDrive\Documents\library.jpg" alt="display picture of doggo">
+<h2>Library managment system</h2>
+</div> 
+</section>
+
+<section id="reg">
+<div class="container">
+<h1>Getting user information</h1>
+<br>
+<br>
+<html>
+<head>
+<title> my first form</title>
+<style>
+body 
+{
+text-align:center;
+     background-color: skyblue;
+     color:black;
+     
+}
+</style>
+</head>
+<body>
+<center> <u><h1>REGESTRATION FORM</h1></u></center>
+<br>
+<br>
+<form onsubmit="return validate()">
+<label>NAME :</label>
+<input type="text" name="name" id="name">
+<br>
+<br>
+<label>REGISTRATION NUMBER :</label>
+<input type="text" name="reg" id="reg">
+<br>
+<br>
+<label>USER NAME :</label>
+<input type="user name" name="user_name" id="user_name">
+<br>
+<br>
+<label>PASSWORD :</label>
+<input type="password" name="pw" id="pw">
+<br>
+<br>
+<label>RE-ENTER PASSWORD:</label>
+<input type="password" name="pd" id="pd">
+<br>
+<br>
+<label>GENDER :</label>
+<input type="radio" name="male" >MALE
+<input type="radio" name="female">FEMALE
+<br>
+<br>
+<label> COLLEGE NAME :</label>
+<select name="college">
+<option value="null" selected>choose</option>
+<option value="sse">SSE</option>
+<option value="sec">SEC</option>
+</select>
+<br>
+<br>
+<label> DEPARTMENT :</label>
+<select name="dept">
+<option value="null" selected>select</option>
+<option value="cse">CSE</option>
+<option value="ece">ECE</option>
+<option value="it">IT</option>
+</select>
+<br>
+<br>
+<input type="reset" value="reset">
+<input type="submit" value="Submit">
+</form>
+<script>
+function validate()
+{
+var a=document.getElementById("pw").value;
+var b=document.getElementById("pd").value;
+if(a!=b){
+alert("invalid password");
+event.preventDefault();
+return false;
+}
+}
+</script>
+</body>
+</html>
+</div>
+</section>
+
+<section id="login">
+<div class="container">
+<h1>LOGIN INFO</h1>
+<br>
+<br>
+<html>
+<head>
+<title>my form</title>
+<style>
+body 
+{
+text-align:center;
+background-color:pink;
+color:black;
+}
+</style>
+</head>
+<body>
+<center><u> <h1> LOGIN PAGE</h1></u></center>
+<br>
+<br>
+<form>
+USER NAME :
+<input type="text" name="user" id="user">
+<br>
+<br>
+PASSWORD:
+<input type="password" name="ps" id="ps">
+<br>
+<br>
+<input type="submit" value="LOGIN">
+</form>
+</body>
+</html>
+</div>
+</section>
+
+<section id="contacts">
+<div class="container">
+<h1>Contact us</h1>
+<p>lorem, ipsum dolor sit amet consectetur adipiscing elit. Nam,laudantium.</p>
+<ul>
+<li>Email ID</li>
+<li>Facebook ID</li>
+</ul>
+</div>
+</section>
+
+</main>
+<footer>
+<p>© Copyright 2022 Doggo Co LTd.</p>
+</footer>
+</body>
+</html>
